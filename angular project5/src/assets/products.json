@@ -1,0 +1,9 @@
+{
+   "products":
+   [
+       {"id":"1",
+           "name":"t-shirts",
+           "color":"green"
+       }
+   ]
+}

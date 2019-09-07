@@ -1,0 +1,52 @@
+<hr>
+<h1>BANK APPLICATION</h1>
+<hr>
+
+
+
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a routerLink="Banglore">Banglore</a>
+      <a routerLink="mysore">Mysore</a>
+      <a routerLink="mandya">Mandy</a>
+    </div>
+  </div>
+
+
+<!-- 
+<form #locForm="ngForm" (ngSubmit)="create(locForm.value)">
+        <div>
+            <label for="name">ID</label>
+            <input id="name" #locRef="ngModel" ngModel name="id" [(ngModel)]="val">
+        </div>
+        <div>
+            <label for="age">Title</label>
+            <input #locRef2="ngModel" id="age" ngModel name="title" [(ngModel)]="val">>
+        </div>
+    
+        <div>
+                <label for="age">author</label>
+                <input #locRef2="ngModel" id="age" ngModel name="author" [(ngModel)]="author" >
+            </div>    <br>
+        <button>Submit</button>
+    </form>
+    
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Author</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let val of value">
+                <td><input type="text" [(ngModel)]="val.id"> </td>
+                <td><input type="text" [(ngModel)]="val.title"></td>
+                <td><input type="text" [(ngModel)]="val.author"></td>
+                <!-- <td (click)="delete(val.id)"> delete</td>
+                <td (click)="update(val)">update</td>
+     -->
+   

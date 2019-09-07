@@ -1,0 +1,27 @@
+<input type="text" [(ngModel)]="firstName" (input)='search()'/>
+
+<div class="color">
+    <table class="table table-striped" width=100%>
+      
+          <tr>
+            <th>UserId</th>
+            <th colspan="2"> Name</th>
+        
+            <th> JobTitleName</th>
+            <th> Phone</th>
+            <th>Region</th>
+          </tr>
+      
+        <tr *ngFor="let ab of employeeData ">
+          <td [title]="ab.userId">{{ ab.userId }}</td>
+          <td [title]="ab.name.firstName">{{ ab.name.firstName}}</td>
+          <td [title]="ab.name.lastName">{{ ab.name.lastName}}</td>
+          <td [title]="ab.jobTitleName">{{ ab.jobTitleName }}</td>
+          <td [title]="ab.phoneNumber">{{ ab.phoneNumber }}</td>
+          <td [title]="ab.region">{{ ab.region }}</td>
+          
+         
+        </tr>
+      
+    </table>
+  </div>

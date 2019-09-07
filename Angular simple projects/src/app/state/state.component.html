@@ -1,0 +1,13 @@
+<!-- <p>state works!</p> -->
+<div class="color">
+    <table class="table table-striped" width=100%>
+          <tr>
+            <th>states</th>
+            <th colspan="2" class="r">districts</th>
+          </tr>
+        <tr *ngFor='let ab of states[0].states'>
+          <td>{{ ab.state }}</td>
+          <td>{{ab.districts}}</td>
+        </tr>
+    </table>
+  </div>

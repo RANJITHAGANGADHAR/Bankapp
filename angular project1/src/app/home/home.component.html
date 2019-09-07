@@ -1,0 +1,16 @@
+<p>home works!</p>
+<input type="text" [(ngModel)]="firstname" (input)='search()'/>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>firstname</th>
+        <th>lastname</th>
+    </tr>
+
+    <tr *ngFor="let o  of employess">
+        <td>{{o.id}}</td>
+        <td>{{o.firstName}}</td>
+        <td>{{o.lastname}}</td>
+    </tr>
+    
+</table>

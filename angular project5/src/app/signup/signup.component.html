@@ -1,0 +1,19 @@
+<p>signup works!</p>
+<p>registervalidation works!</p>
+<div class="container">
+    <form [formGroup]="registerValidationform">
+        <label>FirstName</label>
+        <input type="text" formControlName="firstname" placeholder="First Name" class="form-control">
+        <p *ngIf="registerValidationform.controls.firstname.hasError('required')&& registerValidationform.controls.firstname.touched" style="color: red">* Required</p>
+        <label>Email</label>
+        <input type="text" formControlName="email" placeholder="Email" class="form-control">
+        <p *ngIf="registerValidationform.controls.email.hasError('required')&& registerValidationform.controls.email.touched" style="color: red">* Required</p>
+        <label>password</label>
+        <input type="password" formControlName="password" placeholder="Middle Name" class="form-control">
+        <p *ngIf="registerValidationform.controls.password.hasError('required')&& registerValidationform.controls.password.touched" style="color: red">* Required</p>
+        <button type="button" (click)="register(registerValidationform.value)">Submit</button>
+<button routerLink="login">If u alredy register???</button>
+
+    </form>
+
+</div>

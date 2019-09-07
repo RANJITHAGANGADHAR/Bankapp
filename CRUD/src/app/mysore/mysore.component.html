@@ -1,0 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<hr>
+<h1>Bank Application</h1>
+<hr>
+
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+    <input type="text"[(ngModel)]="name" placeholder="Search.." name="search2">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+
+<table id="customers" border="1" width="100%">
+ <tr>
+   <th>No.</th>
+   <th>BankName</th>
+   <th>BankId</th>
+   <th>CustomerEmail</th>
+   <th>CustomerName</th>
+ </tr>
+ <tr *ngFor="let customer of users | customerEmailFilter:name ">
+   <td scope="row">{{customer.sl}}</td>
+   <td>{{customer.bank}}</td>
+   <td>{{customer.id}}</td>
+   <td>{{customer.email}}</td>
+   <td>{{customer.name}}</td>
+ </tr>
+</table>  

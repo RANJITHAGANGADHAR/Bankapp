@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <form id="newemployee"  name="newemployee"  #newdata="ngForm" (ngSubmit)="add(newdata.value)">
+      <label>Name:</label>
+      <input type="text" name="name" ngModel>
+     
+      <label>Email:</label>
+      <input type="email" name="email" ngModel><br> 
+      <label>Number:</label>
+      <input type="number" name="number" ngModel><br>
+      <label>Name:</label>
+      <input type="password" name="password" ngModel><br>
+  
+  <input type="button" value="add">
+    </form>
+
+  <hr>
+  <hr>
+  <form><table >
+    <tr rowspan="4">
+        <td>Name</td>
+        <td>Email</td>
+        <td>Password</td>
+        <td>Moblie</td>
+    </tr>
+    <tr *ngFor="let emp of employee">
+        <td>{{emp.name}}</td>
+        <td>{{emp.email}}</td>
+        <td>{{emp.password}}</td>
+        <td>{{emp.mobile}}</td>
+        <button class="btn btn-success">Update</button>
+        <button class="btn btn-danger">Delete</button>
+    </tr>
+</table>
+</form>

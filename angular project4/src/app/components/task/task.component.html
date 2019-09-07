@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-header">
+{{task.title}}
+  
+<button class="btn btn-primary" (click)="task.hide=!task.hide">Show</button>
+<button class="btn btn-danger" (click)="delete(task)">Delete</button>  </div>
+    <div class="card-body" [hidden]="task.hide">
+{{task.description}}
+    </div>
+</div>

@@ -1,0 +1,18 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<div class="card">
+    <div class="card-body">
+        <form (submit)="addtask(newTitle,newDescription)">
+            <div class="form-group">
+                <input type="text"placeholder="task title" #newTitle class="form-control">
+            </div>
+            <div class="form-group">
+                    <textarea id="" #newDescription placeholder="task desciption"rows="10" cols="60"class="from-control"></textarea> </div>
+        
+        <button class="btn btn-danger btn-block">Send</button>
+                </form>
+    </div>
+</div>

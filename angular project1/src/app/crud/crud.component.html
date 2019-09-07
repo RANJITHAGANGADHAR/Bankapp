@@ -1,0 +1,26 @@
+
+
+<div class="card">
+        <div class="card-body">
+            <form (submit)="sendData()">
+                <div class="form-group">
+                        <input type="text" class="form-control" name="fname" [(ngModel)]="employee.fname1">
+                </div>
+                <div class="form-group">
+                        <input type="text" class="form-control" name="lname" [(ngModel)]="employee.lname">
+                     </div> 
+            
+                     <div class="form-group">
+                            <input type="number" class="form-control" name="mobile" [(ngModel)]="employee.mobile">
+                        </div>
+                        
+                <div class="form-group">
+                        <input type="email"  class="form-control"name="email" [(ngModel)]="employee.email">
+                    </div>
+                    
+                <div class="form-group">
+                    </div>
+            <button class="btn btn-danger btn-block">Send</button>
+                    </form>
+        </div>
+    </div>
